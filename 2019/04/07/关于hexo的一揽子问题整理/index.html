@@ -6,15 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives: 2019 | Tony&#39;s Blog</title>
+  <title>Mac下利用hexo+github搭建个人博客 | Tony&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Tony&#39;s Blog">
-<meta property="og:url" content="http://yoursite.com/archives/2019/index.html">
+  <meta name="description" content="很久之前就萌生搭建一个自己的博客的想法了，中途因为一些原因搁置了（其实是懒），最近终于下定决心搭建一个自己的博客了。下面介绍自己在搭建博客过程中遇到的一些问题以及解决方案">
+<meta name="keywords" content="hexo">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Mac下利用hexo+github搭建个人博客">
+<meta property="og:url" content="http://yoursite.com/2019/04/07/关于hexo的一揽子问题整理/index.html">
 <meta property="og:site_name" content="Tony&#39;s Blog">
+<meta property="og:description" content="很久之前就萌生搭建一个自己的博客的想法了，中途因为一些原因搁置了（其实是懒），最近终于下定决心搭建一个自己的博客了。下面介绍自己在搭建博客过程中遇到的一些问题以及解决方案">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2019-04-08T01:40:45.472Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Tony&#39;s Blog">
+<meta name="twitter:title" content="Mac下利用hexo+github搭建个人博客">
+<meta name="twitter:description" content="很久之前就萌生搭建一个自己的博客的想法了，中途因为一些原因搁置了（其实是懒），最近终于下定决心搭建一个自己的博客了。下面介绍自己在搭建博客过程中遇到的一些问题以及解决方案">
   
     <link rel="alternative" href="/atom.xml" title="Tony&#39;s Blog" type="application/atom+xml">
   
@@ -160,36 +165,151 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-关于hexo的一揽子问题整理" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2019" class="archive-year">2019</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/04/07/关于hexo的一揽子问题整理/" class="archive-article-date">
-  	<time datetime="2019-04-07T01:07:40.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-04-07</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/04/07/关于hexo的一揽子问题整理/">Mac下利用hexo+github搭建个人博客</a>
+    <h1 class="article-title" itemprop="name">
+      Mac下利用hexo+github搭建个人博客
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/2019/04/07/关于hexo的一揽子问题整理/" class="archive-article-date">
+  	<time datetime="2019-04-07T01:07:40.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-04-07</time>
+</a>
+        
+
+
+
+      
+    <span class="archive-article-date">
+      阅读量 <span id="busuanzi_value_page_pv"></span>
+    </span>
+  
+
+
+
+      </header>
+      
+    
+
+
+
+
+
+    <p class="show-toc-btn" id="show-toc-btn" onclick="showToc();" style="display:none">
+          <span class="btn-bg"></span>
+          <span class="btn-text">文章导航</span>
+          </p>
+    <div id="toc-article" class="toc-article">
+        <span id="toc-close" class="toc-close" title="隐藏导航" onclick="showBtn();">×</span>
+        <strong class="toc-title">文章目录</strong>
+           <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#前期准备"><span class="toc-number">1.</span> <span class="toc-text">前期准备</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#github账号"><span class="toc-number">1.1.</span> <span class="toc-text">github账号</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#生成ssh-key"><span class="toc-number">1.2.</span> <span class="toc-text">生成ssh key</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#下载nodejs"><span class="toc-number">1.3.</span> <span class="toc-text">下载nodejs</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#用hexo-github搭建博客"><span class="toc-number">2.</span> <span class="toc-text">用hexo+github搭建博客</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#生成hexo博客"><span class="toc-number">2.1.</span> <span class="toc-text">生成hexo博客</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#将博客部署到github上"><span class="toc-number">2.2.</span> <span class="toc-text">将博客部署到github上</span></a></li></ol></li></ol>
+         </div>
+   <script type="text/javascript">
+    function showToc(){
+        var toc_article = document.getElementById("toc-article");
+        var show_toc_btn = document.getElementById("show-toc-btn");
+        toc_article.setAttribute("style","display:block");
+        show_toc_btn.setAttribute("style","display:none");
+        };
+    function showBtn(){
+        var toc_article = document.getElementById("toc-article");
+        var show_toc_btn = document.getElementById("show-toc-btn");
+        toc_article.setAttribute("style","display:none");
+        show_toc_btn.setAttribute("style","display:block");
+        };
+   </script>
+      
+
+
+
+      
+    <div class="article-entry" itemprop="articleBody">
+      
+        <blockquote>
+<p>很久之前就萌生搭建一个自己的博客的想法了，中途因为一些原因搁置了（其实是懒），最近终于下定决心搭建一个自己的博客了。下面介绍自己在搭建博客过程中遇到的一些问题以及解决方案</p>
+</blockquote>
+<a id="more"></a>
+<h1 id="前期准备"><a href="#前期准备" class="headerlink" title="前期准备"></a>前期准备</h1><h2 id="github账号"><a href="#github账号" class="headerlink" title="github账号"></a>github账号</h2><p>  没有的话可以去<a href="http://github.com" target="_blank" rel="noopener">GitHub</a>申请一个</p>
+<h2 id="生成ssh-key"><a href="#生成ssh-key" class="headerlink" title="生成ssh key"></a>生成ssh key</h2><ol>
+<li><p>首先你要检测自己电脑是否存在 SSH key<br><code>在终端输出: cd ~/.ssh</code><br>如果你本地没有生成的话，终端会显示：<br><code>-bash: cd: /Users/glamor/.ssh: No such file or directory</code><br>说明你之前没有用过，直接执行第二步。<br>如果之前用过需要清理原来的rsa，执行命令<br><code>mkdir key_backup $ cp id_rsa* key_backup $ rm id_rsa*</code></p>
+</li>
+<li><p>如果本地没有的话，我们要自己手动生成ssh key<br><code>ssh-keygen -t rsa -C &quot;your_email@example.com&quot;</code><br>“<a href="mailto:your_email@example.com" target="_blank" rel="noopener">your_email@example.com</a>“上填写你在github上注册的邮箱<br>成功后终端上面会显示结果如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line">Generating public/private rsa key pair.</span><br><span class="line">Enter file in which to save the key (/Users/xxx/.ssh/id_rsa):</span><br><span class="line">Created directory &apos;/Users/glamor/.ssh&apos;.</span><br><span class="line">Enter passphrase (empty for no passphrase): </span><br><span class="line">Enter same passphrase again: </span><br><span class="line">Your identification has been saved in /Users/glamor/.ssh/id_rsa.</span><br><span class="line">Your public key has been saved in /Users/glamor/.ssh/id_rsa.pub.</span><br><span class="line">The key fingerprint is:</span><br><span class="line">xxxxxxxxx(你自己的秘钥)</span><br><span class="line">The key&apos;s randomart image is:</span><br><span class="line">　　+---[RSA 2048]----+</span><br><span class="line"></span><br><span class="line">　　|     ..oo=.      |</span><br><span class="line"></span><br><span class="line">　　|    . ..=*o      |</span><br><span class="line"></span><br><span class="line">　　|     Boo*o.o     |</span><br><span class="line"></span><br><span class="line">　　|    B O*..o .    |</span><br><span class="line"></span><br><span class="line">　　|   * B. S+       |</span><br><span class="line"></span><br><span class="line">　　|  +.o.o.o E      |</span><br><span class="line"></span><br><span class="line">　　|   .oo.o *       |</span><br><span class="line"></span><br><span class="line">　　|   ..oo . +      |</span><br><span class="line"></span><br><span class="line">　　|    o. . .       |</span><br><span class="line"></span><br><span class="line">　　+----[SHA256]-----+</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>通过<code>/Users/glamor/.ssh/id_rsa.pub.</code>路径找到刚刚生成的公钥。如果默认有些隐藏的文件不显示的话，使用<code>defaults write com.apple.finder AppleShowAllFiles -bool true</code>,命令，如果无法实时生效，建议点击小苹果，强制退出Finder，重启Finder后自然所有文件都看的到。强制退出后，finder会显示之前的隐藏文件夹，如果需要恢复隐藏的话按“Command + Shift + .”</p>
+</li>
+<li><p>登录Github账号，点击Settings，点进去找到Personal settings。点击SSH and GPG keys。向SSH服务器（github.com）Add自己的SSH Public Key后，github.com将这个SSH Key与你的github账号关联起来，你的机器（Mac git client）将有写权限向你github账号名下的remote repository进行push提交代码。<br>点击New SSH key，title栏中随便写啥。把刚才生成的公钥内容粘贴到Key中。点击Add SSH key。</p>
+</li>
+<li><p>测试连接<code>ssh -T git@github.com</code>，出现 <code>Hi JackLearning! You&#39;ve successfully authenticated, but GitHub does not provide shell access.</code>说明连接成功。</p>
+</li>
+<li><p>设置用户信息。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git config --global user.name &quot;你的github的用户名&quot;</span><br><span class="line">$ git config --global user.email &quot;你github的邮箱&quot;</span><br></pre></td></tr></table></figure>
+<h2 id="下载nodejs"><a href="#下载nodejs" class="headerlink" title="下载nodejs"></a>下载<a href="https://nodejs.org" target="_blank" rel="noopener">nodejs</a></h2><p>建议下载10.15.4LTS版本,按步骤进行安装（疯狂点继续就行）</p>
+</li>
+</ol>
+<h1 id="用hexo-github搭建博客"><a href="#用hexo-github搭建博客" class="headerlink" title="用hexo+github搭建博客"></a>用hexo+github搭建博客</h1><h2 id="生成hexo博客"><a href="#生成hexo博客" class="headerlink" title="生成hexo博客"></a>生成hexo博客</h2><p>  打开终端，依次输入以下命令<br>  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">sudo su  //然后输入密码，以管理员身份运行</span><br><span class="line">node -v  //查看nodejs版本</span><br><span class="line">npm -v   //查看包管理器版本</span><br><span class="line">npm install -g cnpm --registry=https://registry.npm.taobao.org //利用npm安装cnpm的淘宝镜像源,利用npm安装插件时总会出现一些难以名状的错误，建议以后都用cnpm来安装或者更新插件</span><br><span class="line">cnpm -v  //查看cnpm版本</span><br><span class="line">cnpm install -g hexo-cli   //进行hexo的安装</span><br><span class="line">hexo -v  //检查hex版本</span><br><span class="line">mkdir blog //建立一个blog的文件夹</span><br><span class="line">cd blog/   //进入blog目录下</span><br><span class="line">sudo hexo init  //初始化hexo，需要等待一会儿</span><br><span class="line">hexo s   //启动hexo</span><br></pre></td></tr></table></figure></p>
+<p>  此时终端中出现</p>
+<blockquote>
+<p>INFO  Start processing<br>INFO  Hexo is running at <a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a> . Press Ctrl+C to stop.</p>
+</blockquote>
+<p>  将“<a href="http://localhost:4000”" target="_blank" rel="noopener">http://localhost:4000”</a> 复制到浏览器打开，可以看到hexo自动在本地生成了第一篇名为“Hello World”的博文。按住”control+c“停止。<br>  下面只要把生成的博客部署到之前注册的github上就可以了。</p>
+<h2 id="将博客部署到github上"><a href="#将博客部署到github上" class="headerlink" title="将博客部署到github上"></a>将博客部署到github上</h2><ol>
+<li>登录github</li>
+<li>点击右上角“+”按钮，点击“New repository”,在“Repository name”上填写“user.name.github.io”,user.name上写上你的github的用户名，“Description”上写”我的博客“，然后点击下面的绿色按钮”Creat repositry“</li>
+<li>在终端上输入<code>cnpm install --save hexo -deployer-git</code>安装插件</li>
+<li><p>装好了之后，在blog的目录下打开”_config.yml“这个文件进行修改。<br>在文档的最下面找到</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># Deployment</span><br><span class="line">## Docs: https://hexo.io/docs/deployment.html</span><br><span class="line">deploy:</span><br><span class="line">type:</span><br></pre></td></tr></table></figure>
+<p>将它修改为</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># Deployment</span><br><span class="line">## Docs: https://hexo.io/docs/deployment.html</span><br><span class="line">deploy:</span><br><span class="line">type:  git</span><br><span class="line">repo:  https://github.com/user.name/user.name.github.io.git   //老规矩，user.name上填上你的github的用户名</span><br><span class="line">brach:  master</span><br></pre></td></tr></table></figure>
+<p>需要注意的是”type:”,”repo:”,”branch:”都需要敲一个空格再进行修改<br>保存文件</p>
+</li>
+<li>打开终端，输入命令<br><code>hexo d</code><br>命令执行完毕后，刷新一下之前打开的github界面发现多了一些内容</li>
+<li>在浏览器打开”user.name.github.io”,发现自己的博客就这么轻松愉快的搭建好了</li>
+</ol>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/img/alipay.jpg">
+                      <span class="reward-type">支付宝</span>
+                    </div>
+                    
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/img/wechat.jpg">
+                      <span class="reward-type">微信</span>
+                    </div>
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -201,7 +321,7 @@
 		</ul>
 	</div>
 
-          
+      
 	<div class="article-category tagcloud">
 		<i class="icon-book icon"></i>
 		<ul class="article-tag-list">
@@ -214,44 +334,133 @@
 	</div>
 
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/04/07/关于hexo的一揽子问题整理/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/04/04/hello-world/" class="archive-article-date">
-  	<time datetime="2019-04-04T03:23:47.542Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-04-04</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2019/04/04/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Hello World</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/04/04/hello-world/">Hello World</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
+        
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#前期准备"><span class="toc-number">1.</span> <span class="toc-text">前期准备</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#github账号"><span class="toc-number">1.1.</span> <span class="toc-text">github账号</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#生成ssh-key"><span class="toc-number">1.2.</span> <span class="toc-text">生成ssh key</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#下载nodejs"><span class="toc-number">1.3.</span> <span class="toc-text">下载nodejs</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#用hexo-github搭建博客"><span class="toc-number">2.</span> <span class="toc-text">用hexo+github搭建博客</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#生成hexo博客"><span class="toc-number">2.1.</span> <span class="toc-text">生成hexo博客</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#将博客部署到github上"><span class="toc-number">2.2.</span> <span class="toc-text">将博客部署到github上</span></a></li></ol></li></ol>
+                    </div>
+                </span>
+            </div>
         </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
+        
+    </div>
+</aside>
+
+
+
   
   
-    </div></section>
   
 
-    
+  
+
+  
+
+  
+  <div id="gitment-ctn"></div> 
+<link rel="stylesheet" href="//imsun.github.io/gitment/style/default.css">
+<script src="//imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+var gitment = new Gitment({
+  id: "http://yoursite.com/2019/04/07/关于hexo的一揽子问题整理/",
+  owner: 'maybeApoet',
+  repo: 'https://maybeapoet.github.io/',
+  oauth: {
+    client_id: '402414712e01d3168475',
+    client_secret: '2f315bd50a6ad2efc3e58de4cf335a472fb6bd99',
+  },
+})
+gitment.render('gitment-ctn')
+</script>
+  
 
 
           </div>
@@ -282,8 +491,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
